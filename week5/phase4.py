@@ -16,8 +16,9 @@ x, y = data
 
 MAXN = 700
 fig = plt.figure()
-fig.set_size_inches(5, 5)
-plt.plot(1.25*np.random.rand(MAXN, 1), 1.25*np.random.rand(MAXN), 'r.', alpha=0.3)
-plt.plot(8+1.5*np.random.rand(MAXN, 1), 5+1.5*np.random.rand(MAXN), 'y.', alpha=0.3)
-plt.plot(5+1.5*np.random.rand(MAXN, 1), 1.25*np.random.rand(MAXN), 'g.', alpha=0.3)
+fig.set_size_inches(6, 5)
+plt.plot(1.25*np.random.randn(MAXN, 1), 1.25*np.random.randn(MAXN), 'r.', alpha=0.3)
+plt.plot(8+1.5*np.random.randn(MAXN, 1), 5+1.5*np.random.randn(MAXN), 'y.', alpha=0.3)
+plt.plot(5+1.5*np.random.randn(MAXN, 1), 1.25*np.random.randn(MAXN), 'g.', alpha=0.3)
 plt.show()
+plt.savefig("toy_problem.png", dpi=300, bbox_inches='tight')
