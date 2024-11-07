@@ -2,6 +2,8 @@ from scipy.optimize import fmin
 import numpy as np
 import matplotlib.pylab as plt
 
+# sse and sae calculate the average distance btw the actual and expected outputs.
+
 # ax + b = y
 x = np.array([2.2, 4.3, 5.1, 5.8, 6.4, 8.0])
 y = np.array([0.4, 10.1, 14.0, 10.9, 15.4, 18.5])
